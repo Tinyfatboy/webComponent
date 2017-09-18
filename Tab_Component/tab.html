@@ -5,9 +5,32 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tab Component</title>
+
+    <link rel="stylesheet" href="tab.css">
 </head>
 <body>
-
+    <div class="wrapper">
+        <div class="tabs">
+            <ol data-role="nav">
+                <li class='active'>点击1</li>
+                <li>点击2</li>
+                <li>点击3</li>
+            </ol>
+            <ol data-role="panes">
+                <li class='active'>
+                    <div class="circle">1</div>
+                </li>
+                <li >
+                    <div class="circle">2</div>
+                </li>
+                <li >
+                    <div class="circle">3</div>
+                </li>
+            </ol>
+        </div>
+    </div>
 </body>
+    <script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
+    <script src="tab.js"></script>
 </html>

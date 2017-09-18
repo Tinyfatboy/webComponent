@@ -1,0 +1,98 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+*::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background:#E2DED2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.wrapper{
+    width:600px;
+    padding:8px;
+    margin-top:2em;
+    position:relative;
+    border-radius:4px;
+    background: repeating-linear-gradient(
+            -45deg,
+            #D7D3C7,
+            #D7D3C7 2px,
+            #CECABE 2px,
+            #CECABE 4px
+    )
+}
+.wrapper::before{
+    position:absolute;
+    display:block;
+    content:'';
+    top:-2px;
+    bottom:-2px;
+    left:-2px;
+    right:-2px;
+    border:1px solid #CBC7BC;
+    border-radius:6px;
+    z-index:-1;
+}
+.tabs{
+    background:#F2F1EC;
+}
+.tabs ol{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.tabs ol:first-child{
+    display: flex;
+    border: 1px solid #B8B3AE;
+    border-bottom:none;
+}
+
+.tabs ol:first-child>li{
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #e5dfd3 0%,#d0c9b8 100%);
+    color: #847E6F;
+    text-shadow: 1px 1px 1px white;
+    box-shadow: inset 0 0 2px hsla(0,0%,0%,0.15);
+}
+.tabs ol:first-child>li.active{
+    background: linear-gradient(to bottom, white 0%,#F0EDE6 100%);
+    color: #222222;
+    box-shadow: none;
+}
+.tabs ol:nth-child(2){
+    border: 1px solid #B8B3AE;
+    border-top: none;
+    background: #F0EDE6;
+}
+.tabs ol:nth-child(2) > li{
+    display: none;
+}
+.tabs ol:nth-child(2) > li.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:450px;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #DFDCD3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:#333;
+    margin: 5em 0;
+}
