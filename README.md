@@ -8,4 +8,4 @@
 
 ### 预览组件
 
-- Clone或download到本地；运行文件夹里的html文件可以查看组件效果
+- Clone或download到本地；运行文件夹的html文件可以查看组件效果
